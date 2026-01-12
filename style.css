@@ -1,0 +1,298 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+/* Header / Profile */
+.header {
+    margin-bottom: 48px;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.profile-info h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.email {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.social-links a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.section p {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+/* News List */
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.news-list .date {
+    display: inline-block;
+    width: 80px;
+    color: #888;
+    font-weight: 500;
+}
+
+/* Publications */
+.publications {
+    list-style: none;
+}
+
+.publications li {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.publications strong {
+    color: #111;
+    font-weight: 500;
+}
+
+.publications .authors {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.publications .venue {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+.publications a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 8px;
+}
+
+.publications a:hover {
+    text-decoration: underline;
+}
+
+/* Education */
+.education-list {
+    list-style: none;
+}
+
+.education-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.education-list strong {
+    color: #111;
+    font-weight: 500;
+}
+
+.education-list .details {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Experience */
+.experience-list {
+    list-style: none;
+}
+
+.experience-list li {
+    margin-bottom: 20px;
+}
+
+.experience-list .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.experience-list .exp-header strong {
+    color: #111;
+    font-weight: 500;
+}
+
+.experience-list .exp-header .date {
+    color: #888;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.experience-list .company {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.experience-list p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Affiliation */
+.affiliation {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Organization Logos */
+.logos-section {
+    text-align: center;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: nowrap;
+}
+
+.org-logo {
+    height: 24px !important;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: opacity 0.2s, filter 0.2s;
+}
+
+.org-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.waymo-logo {
+    height: 16px !important;
+}
+
+.mcgill-logo {
+    height: 36px !important;
+}
+
+.damascus-logo {
+    height: 50px !important;
+}
+
+/* Footer */
+.footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .news-list .date {
+        display: block;
+        width: auto;
+        margin-bottom: 2px;
+    }
+}

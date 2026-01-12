@@ -295,4 +295,29 @@ body {
         width: auto;
         margin-bottom: 2px;
     }
+
+    .logos {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .org-logo {
+        height: 20px !important;
+    }
+
+    .waymo-logo {
+        height: 12px !important;
+    }
+
+    .mcgill-logo {
+        height: 28px !important;
+    }
+
+    .damascus-logo {
+        height: 40px !important;
+    }
+
+    .container {
+        padding-bottom: 40px;
+    }
 }
